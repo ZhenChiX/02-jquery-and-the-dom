@@ -8,7 +8,12 @@ let articles = [];
 function Article(rawDataObj) {
   // TODO: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
-  
+  this.author = rawDataObj.author;
+  this.authorUrl = rawDataObj.authorUrl;
+  this.title = rawDataObj.title;
+  this.category = rawDataObj.category;
+  this.body = rawDataObj.body;
+  this.publishedOn = rawDataObj.publishedOn;
 }
 
 Article.prototype.toHtml = function() {
@@ -28,6 +33,7 @@ Article.prototype.toHtml = function() {
       3. article title,
       4. article body, and
       5. publication date. */
+      
 
   // REVIEW: Display the date as a relative number of 'days ago'
   $newArticle
@@ -54,6 +60,6 @@ for (let i = 0; i < rawData.length; i++) {
   articles.push(new Article(rawData[i]));
 }
 
-for (let i = 0; i < articles.length; i++) {
-  $("#articles").append(articles[i].toHtml());
-}
+// for (let i = 0; i < articles.length; i++) {
+//   $("#articles").append(articles[i].toHtml());
+// }
