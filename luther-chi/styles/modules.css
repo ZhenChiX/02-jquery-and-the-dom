@@ -5,3 +5,7 @@
 #navbar li a:hover {
     color: red;
 }
+
+.template{
+    display: none;
+}
