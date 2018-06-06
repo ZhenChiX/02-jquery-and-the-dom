@@ -1,0 +1,44 @@
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.icon-menu {
+    font-size: 2em;
+}
+
+.main-header {
+    background-color: bisque;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 10px 10px 10px #4445;
+    border-radius: 15px;
+}
+
+img {
+    border: 7px solid beige;
+    border-radius: 12px;
+    box-shadow: 7px 7px 7px #4445;
+}
+
+.pull-right {
+    float: right;
+    margin: 5px auto;
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+    margin: 5px;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+}
